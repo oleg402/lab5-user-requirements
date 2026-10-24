@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Навчальний сайт про вимоги користувача. Лабораторна робота № 5.">
+<title>Вимоги користувача — навчальний сайт</title>
+<style>
+:root{color-scheme:light;--ink:#172934;--paper:#f5f3ec;--green:#174e45;--line:#d4dcd6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:18px/1.65 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid #b45129;outline-offset:5px}
+.wrap{width:min(1080px,90%);margin:auto}header{padding:24px 0;border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}nav a{font-size:15px;text-decoration:none}nav div{display:flex;gap:22px}
+.hero{padding:80px 0 68px}.label{font:600 13px/1.5 system-ui;letter-spacing:.13em;text-transform:uppercase;color:var(--green)}
+h1{font-size:clamp(42px,7vw,82px);line-height:1.08;letter-spacing:-.05em;margin:18px 0 24px;max-width:800px}h2{font-size:clamp(26px,4vw,40px);line-height:1.2;letter-spacing:-.025em}h3{font-size:22px;margin:12px 0}
+.lead{max-width:680px;font-size:22px;color:#475b62}.button{display:inline-block;padding:12px 22px;background:var(--green);color:white;text-decoration:none;border-radius:6px;margin-top:14px}
+section{padding:42px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:25px;background:white;border:1px solid var(--line);border-radius:10px}.number{font-size:14px;color:var(--green)}
+.example{padding:28px;border-left:5px solid #cf7850;background:#fffaf1;max-width:850px}details{border-bottom:1px solid var(--line);padding:18px 0}summary{font-weight:600;cursor:pointer}footer{padding:28px 0;color:#53656a;font-size:14px}
+@media(max-width:700px){.hero{padding:48px 0}.grid{grid-template-columns:1fr}.lead{font-size:19px}nav div{gap:14px}.card{padding:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><nav class="wrap" aria-label="Основна навігація"><a href="#home">Лабораторна № 5 / GitHub</a><div><a href="#principles">Принципи</a><a href="#example">Приклад</a><a href="#questions">Запитання</a></div></nav></header>
+<main id="home" class="wrap">
+<div class="hero"><p class="label">Основи програмної інженерії</p><h1>Спочатку — потреба користувача.</h1><p class="lead">Вимоги користувача пояснюють, яку задачу людина хоче виконати за допомогою програмного продукту та який результат для неї важливий.</p><a class="button" href="#example">Розглянути приклад ↓</a></div>
+<section id="principles"><p class="label">Три орієнтири</p><h2>Від ідеї до зрозумілої вимоги</h2><div class="grid">
+<article class="card"><span class="number">01 / Користь</span><h3>Визначити потребу</h3><p>З’ясувати, хто користуватиметься системою, яку проблему вона розв’язує та чому це важливо.</p></article>
+<article class="card"><span class="number">02 / Ясність</span><h3>Уточнити умови</h3><p>Описати дію користувача, обмеження та очікувану поведінку під час помилки.</p></article>
+<article class="card"><span class="number">03 / Перевірка</span><h3>Узгодити результат</h3><p>Визначити спостережувані критерії, за якими можна перевірити виконання вимоги.</p></article>
+</div></section>
+<section id="example"><p class="label">Навчальний приклад</p><h2>Подання звіту на навчальному порталі</h2><div class="example"><p>Як студент, я хочу завантажити звіт до обраної практичної роботи, щоб викладач міг його перевірити.</p><p>Критерій приймання: після успішного збереження система показує назву файла, час подання і статус «Подано». Якщо передавання перервано, підтвердження успіху не з’являється.</p></div></section>
+<section id="questions"><p class="label">Коротко про головне</p><h2>Поширені запитання</h2>
+<details><summary>Чим вимога відрізняється від побажання?</summary><p>Побажання потребує уточнення. Узгоджена вимога визначає потрібну можливість і умови, за яких її виконання можна перевірити.</p></details>
+<details><summary>Навіщо критерії приймання?</summary><p>Вони допомагають замовнику, розробнику й тестувальнику однаково розуміти очікуваний результат.</p></details>
+<details><summary>Чи достатньо однієї історії користувача?</summary><p>Історію доповнюють правилами, прикладами, винятками та обмеженнями, необхідними для реалізації.</p></details>
+</section>
+</main>
+<footer class="wrap">Навчальна робота · Матюшков О. О. · 611п · 2026</footer>
+</body>
+</html>
